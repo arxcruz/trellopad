@@ -13,13 +13,11 @@ creating the epic, the backlog, linking everything together, descriptions, etc.
 # Install
 Just install the requirements
 
-::
-
     pip install -r requirements.txt
 
 # What you will need
 You gonna need a api key and api token that you can
-(`generated here <https://trello.com/1/appKey/generate>`).
+[generated here](https://trello.com/1/appKey/generate).
 
 # How to use
 
@@ -27,8 +25,6 @@ python trellopad.py --api apikey --token token --url etherpad_url
 
 # Etherpad format
 Format is very easy:
-
-.. code-block:: yaml
 
     - epic: 'My epic'
       label: 'Label of my sprint'
@@ -53,3 +49,10 @@ Format is very easy:
 
 This is pretty much what you need, then all you need to do is run the script,
 and see the magic happens
+
+OBS:
+You don't need to create the trello list, label or epic list, the script will
+create it automatically for you, however, it will get the first returned if
+exist, so if there are more than one list with the same name, the first one
+returned will be used, so be carefull. In the future, who knows, I can search
+for the id.
